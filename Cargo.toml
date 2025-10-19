@@ -1,0 +1,14 @@
+[package]
+name = "space-modelica-components"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["rlib"]  # Reusable library only
+
+[dependencies]
+modelica-rust-ffi = { path = "./modelica-rust-ffi" }
+thiserror = "1.0"
+
+[build-dependencies]
+# For compiling .mo files if needed
